@@ -1,0 +1,21 @@
+﻿<Window x:Class="pr3_part2_Sergeev_Alexander_322.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr3_part2_Sergeev_Alexander_322"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="AmountTextBox" HorizontalAlignment="Left" Height="23" Margin="120,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TermTextBox" HorizontalAlignment="Left" Height="23" Margin="120,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RateTextBox" HorizontalAlignment="Left" Height="23" Margin="120,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="SimpleInterestRadio" Content="Простые проценты" HorizontalAlignment="Left" Margin="120,150,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="CompoundInterestRadio" Content="Сложные проценты" HorizontalAlignment="Left" Margin="120,180,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Left" Margin="120,220,0,0" VerticalAlignment="Top" Width="75" Click="CalculateButton_Click"/>
+        <Label Content="Сумма" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Срок (месяцев)" HorizontalAlignment="Left" Margin="30,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Процетная ставка" HorizontalAlignment="Left" Margin="15,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ResultLabel" Content="Доход по вкладу: " HorizontalAlignment="Left" Margin="30,260,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
